@@ -1,0 +1,20 @@
+{
+  "name": "@standard-api/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.130",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.10.5",
+    "sst": "^2.38.7",
+    "vitest": "^1.1.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.478.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
