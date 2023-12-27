@@ -45,9 +45,6 @@ jobs:
       - name: Serverless Stack Deploy
         run: |
           set -euxo pipefail
-          pnpm sst secrets set MONGO_URI ${{ secrets.MONGO_URI }} --stage prod
-          pnpm sst secrets set JWT_SECRET ${{ secrets.JWT_SECRET  }} --stage prod
-          pnpm sst secrets set SERP_API_KEY ${{ secrets.SERP_API_KEY  }} --stage prod
           pnpm sst deploy --stage prod
 
         env:
